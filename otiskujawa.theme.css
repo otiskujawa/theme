@@ -3,11 +3,23 @@
   *	@author otiskujawa#5583
   *	@version 0.0
   *	@description otiskujawa tries to make a good theme
-  * @source https://github.com/otiskujawa/theme
-  * @invite TBbteuW
+  * 	@source https://github.com/otiskujawa/theme
+  * 	@invite TBbteuW
 */
 
 :root {
+	/* Main colors */
+	--main:	#007bff;
+	--sec:	#6f00ff;
 	
-	
+	/* Defining colors */
+	--gr1a: var(--main); /* Colors of Message box gradient 1 */
+	--gr1b: var(--sec);
+}
+
+.scrollableContainer-15eg7h { /* Message box gradient 1 */
+	background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));
+}
+.attachButtonPlay-1ATmb5{ /* Message box gradient 1 */
+	color: var(--main);
 }
