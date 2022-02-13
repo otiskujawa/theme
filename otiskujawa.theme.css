@@ -3,23 +3,73 @@
   *	@author otiskujawa#5583
   *	@version 0.0
   *	@description otiskujawa tries to make a good theme
-  * 	@source https://github.com/otiskujawa/theme
-  * 	@invite TBbteuW
+  * @website https://www.youtube.com/watch?v=qWwb8S02f_c
+  * @invite TBbteuW
 */
 
 :root {
 	/* Main colors */
 	--main:	#007bff;
 	--sec:	#6f00ff;
-	
+	--bg:	rgba(0,0,0,0);
 	/* Defining colors */
 	--gr1a: var(--main); /* Colors of Message box gradient 1 */
 	--gr1b: var(--sec);
+	
+	--guildsbar:var(--bg); /* Test color */
+	--sidebar:var(--bg);
 }
 
-.scrollableContainer-15eg7h { /* Message box gradient 1 */
+
+/* ------------------------- Chat ------------------------- */
+.scrollableContainer-15eg7h	{ /* Message box gradient 1 */
 	background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));
 }
-.attachButtonPlay-1ATmb5{ /* Message box gradient 1 */
+.attachButtonPlay-1ATmb5	{ /* Message box gradient 1 */
 	color: var(--main);
 }
+
+/* ------------------------- Sidebar ------------------------- */
+
+/* ------------------------- Backgrounds */
+
+
+.guilds-2JjMmN .scroller-3X7KbA{background-color: var(--guildsbar);}  /* Guilds background */
+.sidebar-1tnWFu, .container-1NXEtd, .panels-3wFtMD, .chat-2ZfjoI {background-color: var(--sidebar);} /*Sidebar background*/
+.container-ZMc96U, .header-3OsQeK{background-color: var(--bg) !important;} /*Top bar background*/
+
+
+/* ------------------------- Others */
+
+/* Connection */
+.rtcConnectionStatusConnected-1c73OK{color: var(--main);}
+.rtcConnectionQualityFine-3zZrSa .pingForeground-1BRBTc{color: var(--main);}
+/* Buttons */
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx, .button-1EGGcP .buttonColor-3bP3fX.buttonActive-Uc1jHx {
+    background-color: var(--main);
+    color: var(--sec);
+}
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx:hover {
+    background-color: var(--sec);
+    color: var(--main);
+}
+.button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX{
+	background-color: var(--bg);
+    color: var(--main);
+}
+.button-1EGGcP.buttonColor-3bP3fX:hover, .button-1EGGcP .buttonColor-3bP3fX{
+	background-color: var(--sec);
+	color: var(--main);
+}
+
+/* 'Add' and 'explore' servers buttons */
+.circleIconButton-1VxDrg{color: var(--main);}
+.circleIconButton-1VxDrg.selected-2r1Hvo{background-color: var(--main); color:var(--sec);}
+
+/* Stream untitled icon */
+.icon-39rdLt{background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));}
+
+
+/* ------------------------- WTF ------------------------- */
+.form-3gdLxP::before{display:none;}
+.children-3xh0VB::after{display:none;}
