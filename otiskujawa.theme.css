@@ -1,9 +1,9 @@
 /**
   *	@name otiskujawa
   *	@author otiskujawa#5583
-  *	@version 0.0.2
+  *	@version 0.0.3
   *	@description otiskujawa tries to make a good theme
-  * @website https://www.youtube.com/watch?v=qWwb8S02f_c
+  * @source https://github.com/otiskujawa/theme
   * @invite TBbteuW
 */
 
@@ -13,15 +13,26 @@
 	--sec:	#6f00ff;
 	--bg:	rgba(0,0,0,0);
 	/* Defining colors */
-	--gr1a: var(--main); /* Colors of Message box gradient 1 */
+	--gr1a: var(--main); 	/* Colors of Message box gradient 1 */
 	--gr1b: var(--sec);
 	
-	--guildsbar:var(--bg); /* Test color */
-	--sidebar:var(--bg);
+	--guildsbar:var(--bg); 	/* Test color */
+	--sidebar:	var(--bg);
+	
+	
+	--sa:	var(--main);	/* Status */	/* Icon active */
+	--sb:	var(--main);					/* Icon brb */
+	--sd:	var(--sec);						/* Icon dnd */
+	--ss:	var(--main);					/* Speaking */
 }
 
 
-/* ------------------------- Chat ------------------------- */
+
+
+/*──┐*/
+/* 	╞═════════════════════════╡	Chat	╞═════════════════════════ */
+/*	│*/
+/*──┴─────────────────────────┤Gradient	├─────────────────────────	*/
 .scrollableContainer-15eg7h	{ /* Message box gradient 1 */
 	background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));
 }
@@ -29,22 +40,24 @@
 	color: var(--main);
 }
 
-/* ------------------------- Sidebar ------------------------- */
 
-/* ------------------------- Backgrounds */
-
+/*┐
+  ╞═════════════════════════╡	Sidebar	╞═════════════════════════ 
+  │
+──┴─────────────────────────┤ Backgrounds	├─────────────────────────	*/
 
 .guilds-2JjMmN .scroller-3X7KbA{background-color: var(--guildsbar);}  /* Guilds background */
 .sidebar-1tnWFu, .container-1NXEtd, .panels-3wFtMD, .chat-2ZfjoI {background-color: var(--sidebar);} /*Sidebar background*/
+.privateChannels-oVe7HL{background-color: var(--sidebar);}/* Private/friends chat background*/
 .container-ZMc96U, .header-3OsQeK{background-color: var(--bg) !important;} /*Top bar background*/
 
-
-/* ------------------------- Others */
-
-/* Connection */
+/*┬─────────────────────────┤RTC connection	├─────────────────────────
+──┘*/
 .rtcConnectionStatusConnected-1c73OK{color: var(--main);}
 .rtcConnectionQualityFine-3zZrSa .pingForeground-1BRBTc{color: var(--main);}
-/* Buttons */
+
+/*┬─────────────────────────┤	Buttons		├─────────────────────────
+──┘*/
 .button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx, .button-1EGGcP .buttonColor-3bP3fX.buttonActive-Uc1jHx {
     background-color: var(--main);
     color: var(--sec);
@@ -62,7 +75,8 @@
 	color: var(--main);
 }
 
-/* 'Add' and 'explore' servers buttons */
+/*┬─────────────────────────┤	'Add' and 'explore' servers buttons	├─────────────────────────
+──┘*/
 .circleIconButton-1VxDrg{color: var(--main);}
 .circleIconButton-1VxDrg.selected-2r1Hvo{background-color: var(--main); color:var(--sec);}
 
@@ -70,6 +84,60 @@
 .icon-39rdLt{background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));}
 
 
-/* ------------------------- WTF ------------------------- */
+/*┐
+  ╞═════════════════════════╡ Mixed Cat		╞═════════════════════════ 
+  │
+──┴─────────────────────────┤ Subcat	├─────────────────────────	*/
+#app-mount .wrapper-1VLyxH rect[fill="#43b581"], #app-mount .wrapper-1VLyxH rect[fill="#3ba55c"], #app-mount .wrapper-1VLyxH rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=online], #app-mount .wrapper-1VLyxH rect[fill*="hsl(139"] {
+  fill: var(--sa); 	/* Icon active */
+}
+#app-mount .wrapper-1VLyxH rect[fill="#faa61a"], #app-mount .wrapper-1VLyxH rect[fill="rgba(250, 166, 26, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=idle], #app-mount .wrapper-1VLyxH rect[fill*="hsl(38"] {
+  fill: var(--sb); 	/* Icon brb */
+}
+#app-mount .wrapper-1VLyxH rect[fill="#f04747"], #app-mount .wrapper-1VLyxH rect[fill="rgba(240, 71, 71, 1)"], #app-mount .wrapper-1VLyxH rect[fill="#ed4245"], #app-mount .wrapper-1VLyxH rect[mask*=dnd], #app-mount .wrapper-1VLyxH rect[fill*="hsl(359"] {
+  fill: var(--sd); 	/* Icon dnd */
+}
+.avatarSpeaking-33RRJU, .avatarSpeaking-2pCGrZ, .border-2Vy6FN.speaking-7QZEkv{box-shadow: inset 0 0 0 2px var(--ss),inset 0 0 0 3px var(--bg);} /* Speaking now */
+
+/*╦═════════════════════════╡ Other (Not categorized)╞═════════════════════════ 
+──╜*/
+
+
+/*╦═════════════════════════╡ WTF ╞═════════════════════════ 
+──╜*/
 .form-3gdLxP::before{display:none;}
 .children-3xh0VB::after{display:none;}
+
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌Comments samples▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀*/
+
+
+
+/*──┐
+ 	╞═════════════════════════╡ Window	╞═════════════════════════
+	└┐
+	┌┘
+	└┐					Your computer has virus
+	┌┘
+	└┐
+	┌┘
+	└┐			|		ok		|	|		ok		|
+	┌┘
+	├─────────────────────────────────────────────────────────────
+────┘*/
+
+
+
+/*╦═════════════════════════╡ Cat		╞═════════════════════════ 
+──╜*/
+
+
+
+/*┐
+  ╞═════════════════════════╡ Cat		╞═════════════════════════ 
+  │
+──┴─────────────────────────┤ Subcat	├─────────────────────────	*/
+
+
+
+/*┬─────────────────────────┤ SubCat	├─────────────────────────
+──┘*/
