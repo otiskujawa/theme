@@ -12,22 +12,36 @@
 	/* Main colors */
 	--main:	#007bff;
 	--sec:	#6f00ff;
-	--bg:	rgba(100,10,1,1);
+	--nact:	#9b8aff; /* Not active color */
+	--bg:	rgba(0,0,0,0);
+	--btbg:	#578cff60;
 	/* Defining colors */
 	--gr1a: var(--main); 	/* Colors of Message box gradient 1 */
-	--gr1b:	var(--sec);
-	
-	--gbar:		var(--bg); 	/* guilds bar */
+	--gr1b: var(--sec);
+	/* Backgrounds */
+	--guildsbar:var(--bg); 	
 	--sidebar:	var(--bg);
-	
-	
-	--sa:	var(--main);	/* Status */	/* Icon active */
-	--sb:	var(--main);					/* Icon brb */
-	--sd:	var(--sec);						/* Icon dnd */
-	--ss:	var(--main);					/* Speaking */
-	
+	/* Status */
+	--sta:	var(--main);	/* Status */	/* Icon active */
+	--stb:	var(--main);					/* Icon brb */
+	--std:	var(--sec);						/* Icon dnd */
+	--sts:	var(--main);					/* Speaking */
+	/* Panels */
+	--pbg:	var(--bg);/* Panels background */
+	--pliv:	var(--bg);/* Live background */
+	--prtc:	var(--bg);/* Voice connected or smth */
+	--prad:	10px;
+	/* Spotify */
+	--spbg:	var(--bg);
+	--spmn:	var(--main);
+	/* Bar */
 	--box:		#836;
 	--boxsec:	#283;
+	/* Test colors */
+	--a:	#ff0000;
+	--b:	#00ff00;
+	--c:	#0000ff;
+	--d:	#ffff00;
 }
 
 
