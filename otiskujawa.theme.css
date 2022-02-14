@@ -30,7 +30,7 @@
 	--pbg:	var(--bg);/* Panels background */
 	--pliv:	var(--bg);/* Live background */
 	--prtc:	var(--bg);/* Voice connected or smth */
-	--prad:	10px;
+	--prad:	10px; /* Border radius */ /* 100% to ball */
 	/* Spotify */
 	--spbg:	var(--bg);
 	--spmn:	var(--main);
@@ -57,20 +57,32 @@
 .attachButtonPlay-1ATmb5	{ /* Message box gradient 1 */
 	color: var(--main);
 }
+.theme-dark .container-2cd8Mz {
+    background-color: var(--bg);
+}
 
 
 /*┐
   ╞═════════════════════════╡  Sidebar	╞═════════════════════════ 
   │
 ──┴─────────────────────────┤  Backgrounds	├─────────────────────────	*/
-
+.scroller-WSmht3 {background-color: var(--sidebar);}
 .guilds-2JjMmN .scroller-3X7KbA{background-color: var(--guildsbar);}  /* Guilds background */
 .sidebar-1tnWFu, .container-1NXEtd, .panels-3wFtMD, .chat-2ZfjoI {background-color: var(--sidebar);} /*Sidebar background*/
 .privateChannels-oVe7HL{background-color: var(--sidebar);}/* Private/friends chat background*/
 .container-ZMc96U, .header-3OsQeK{background-color: var(--bg) !important;} /*Top bar background*/
+.nowPlayingColumn-1eCBCN, .container-1oAagU{ background-color: var(--bg);}
+
+.wrapper-2RrXDg {
+    background-color: var(--box);
+    border: 1px solid var(--sec);
+}
+.section-3G9aLW {
+    background-color: var(--boxsec);
+}
 
 /* Panels */
-.panels-3wFtMD{background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));}/* Panels background */
+.panels-3wFtMD{background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));border-radius:var(--prad);}/* Panels background */
 .activityPanel-9icbyU{background-color: var(--pliv);}/* Live background */
 .wrapper-3Hk9OB{background-color: var(--prtc);}/* Voice connected or smth */
 
@@ -114,7 +126,7 @@
 .button-12Fmur:hover.button-f2h6uQ:hover{background-color: var(--btbg);}
 .button-12Fmur:hover .contents-3ca1mk{color: var(--sec);}
 
-.cover-SwJ-ck{}
+.cover-SwJ-ck{border-radius:var(--prad);}
 /*┬─────────────────────────┤	'Add' and 'explore' servers buttons 	├─────────────────────────
 ──┘*/
 .circleIconButton-1VxDrg{color: var(--main);}
@@ -265,6 +277,13 @@ div[class*="typeWindows-"]::after {
 .children-3xh0VB::after{display:none;}
 /**{background-image:url(https://cdn.discordapp.com/emojis/891412061307932722.gif?quality=lossless);}*/
 /**{background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));}*/
+
+
+/**{background: linear-gradient(-1deg, var(--gr1a), var(--gr1b)); animation: spin 10s infinite linear;}*/
+
+
+
+
 /*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌Comments samples▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀*/
 
 
