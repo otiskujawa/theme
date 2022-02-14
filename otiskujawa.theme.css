@@ -35,8 +35,8 @@
 	--spbg:	var(--bg);
 	--spmn:	var(--main);
 	/* Bar */
-	--box:		#836;
-	--boxsec:	#283;
+	--box:		#433659;
+	--boxsec:	#474673;
 	/* Test colors */
 	--a:	#ff0000;
 	--b:	#00ff00;
@@ -70,7 +70,7 @@
 .container-ZMc96U, .header-3OsQeK{background-color: var(--bg) !important;} /*Top bar background*/
 
 /* Panels */
-.panels-3wFtMD{background-color: var(--pbg);}/* Panels background */
+.panels-3wFtMD{background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));}/* Panels background */
 .activityPanel-9icbyU{background-color: var(--pliv);}/* Live background */
 .wrapper-3Hk9OB{background-color: var(--prtc);}/* Voice connected or smth */
 
@@ -97,10 +97,65 @@
 	background-color: var(--sec);
 	color: var(--main);
 }
+.unreadBar-elBRZx{background: linear-gradient(-90deg, var(--gr1a), var(--gr1b));}
 
-/*┬─────────────────────────┤	Settings menu	├─────────────────────────
+
+/*┬─────────────────────────┤	Spotify 	├─────────────────────────
 ──┘*/
+.container-6sXIoE .button-12Fmur{color: var(--nact);}
+.container-6sXIoE .button-12Fmur.active-6TsW-_ {color: var(--spmn);}
+.theme-dark .bar-1Bhnl9{background-color: var(--sec);}
+.barFill-2Bh7CX{background-color: var(--spmn) !important;}
+.container-6sXIoE{background-color: var(--psp);}/* Spotify controls background */
+.colorStandard-21JIj7{color: var(--nact);}
+.bar-g2ZMIm{background-color: var(--nact);}
+.grabber-7sd5f5{color: var(--spmn);}
 
+.button-12Fmur:hover.button-f2h6uQ:hover{background-color: var(--btbg);}
+.button-12Fmur:hover .contents-3ca1mk{color: var(--sec);}
+
+.cover-SwJ-ck{}
+/*┬─────────────────────────┤	'Add' and 'explore' servers buttons 	├─────────────────────────
+──┘*/
+.circleIconButton-1VxDrg{color: var(--main);}
+.circleIconButton-1VxDrg.selected-2r1Hvo{background-color: var(--main); color:var(--sec);}
+
+/* Stream untitled icon */
+.icon-39rdLt{background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));}
+
+/*┐
+  ╞═════════════════════════╡  Members	╞═════════════════════════ 
+  │
+──┴─────────────────────────┤  Subcat	├─────────────────────────	*/
+.botTag-2mryIa{background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));}/* Nice BOT tag */
+.ownerIcon-255uKo{color: var(--main);}
+.ownerIcon-255uKo.icon-1dGlZy.admin-Kv1Hp_{color: var(--sec);}
+.ownerIcon-255uKo.icon-1dGlZy.management-3fF_o8{color: var(--nact);}
+.container-2o3qEW{background: linear-gradient(0deg, var(--gr1a), var(--gr1b));}
+.members-3WRCEx,
+.membersWrap-3NUR2t .content-2a4AW9{background: #00000000;}
+
+/*┐
+  ╞═════════════════════════╡  Mixed Cat		╞═════════════════════════ 
+  │
+──┴─────────────────────────┤  Subcat	├─────────────────────────	*/
+#app-mount .wrapper-1VLyxH rect[fill="#43b581"], #app-mount .wrapper-1VLyxH rect[fill="#3ba55c"], #app-mount .wrapper-1VLyxH rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=online], #app-mount .wrapper-1VLyxH rect[fill*="hsl(139"] {
+  fill: var(--sta); 	/* Icon active */
+}
+#app-mount .wrapper-1VLyxH rect[fill="#faa61a"], #app-mount .wrapper-1VLyxH rect[fill="rgba(250, 166, 26, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=idle], #app-mount .wrapper-1VLyxH rect[fill*="hsl(38"] {
+  fill: var(--stb); 	/* Icon brb */
+}
+#app-mount .wrapper-1VLyxH rect[fill="#f04747"], #app-mount .wrapper-1VLyxH rect[fill="rgba(240, 71, 71, 1)"], #app-mount .wrapper-1VLyxH rect[fill="#ed4245"], #app-mount .wrapper-1VLyxH rect[mask*=dnd], #app-mount .wrapper-1VLyxH rect[fill*="hsl(359"] {
+  fill: var(--std); 	/* Icon dnd */
+}
+.avatarSpeaking-33RRJU, .avatarSpeaking-2pCGrZ, .border-2Vy6FN.speaking-7QZEkv{
+	box-shadow: inset 0 0 0 2px var(--sts),inset 0 0 0 3px var(--bg);
+} /* Speaking now */
+.strikethrough-2Kl6HF{color:var(--sec);}
+
+
+/*╦═════════════════════════╡ 	Settings menu 	╞═════════════════════════ 
+──╜*/
 .lookFilled-yCfaCM.colorBrand-I6CyqQ {
 	background-color: var(--sec); /*settings buttons i think*/
 }
@@ -144,47 +199,40 @@
 .connection-107AGH{
 	background-color: var(--boxsec); /*same as above*/
 }
-
-/*┬─────────────────────────┤	Spotify 	├─────────────────────────
-──┘*/
-.container-6sXIoE .button-12Fmur{color: var(--nact);}
-.container-6sXIoE .button-12Fmur.active-6TsW-_ {color: var(--spmn);}
-.theme-dark .bar-1Bhnl9{background-color: var(--sec);}
-.barFill-2Bh7CX{background-color: var(--spmn) !important;}
-.container-6sXIoE{background-color: var(--psp);}/* Spotify controls background */
-.colorStandard-21JIj7{color: var(--nact);}
-.bar-g2ZMIm{background-color: var(--nact);}
-.grabber-7sd5f5{color: var(--spmn);}
-
-.button-12Fmur:hover.button-f2h6uQ:hover{background-color: var(--btbg);}
-.button-12Fmur:hover .contents-3ca1mk{color: var(--sec);}
-
-/*┬─────────────────────────┤	'Add' and 'explore' servers buttons 	├─────────────────────────
-──┘*/
-.circleIconButton-1VxDrg{color: var(--main);}
-.circleIconButton-1VxDrg.selected-2r1Hvo{background-color: var(--main); color:var(--sec);}
-
-/* Stream untitled icon */
-.icon-39rdLt{background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));}
-
-
-/*┐
-  ╞═════════════════════════╡  Mixed Cat		╞═════════════════════════ 
-  │
-──┴─────────────────────────┤  Subcat	├─────────────────────────	*/
-#app-mount .wrapper-1VLyxH rect[fill="#43b581"], #app-mount .wrapper-1VLyxH rect[fill="#3ba55c"], #app-mount .wrapper-1VLyxH rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=online], #app-mount .wrapper-1VLyxH rect[fill*="hsl(139"] {
-  fill: var(--sta); 	/* Icon active */
+.theme-dark .feature-2IUcBI{
+	background-color: var(--box); /*Nitro feature*/
 }
-#app-mount .wrapper-1VLyxH rect[fill="#faa61a"], #app-mount .wrapper-1VLyxH rect[fill="rgba(250, 166, 26, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=idle], #app-mount .wrapper-1VLyxH rect[fill*="hsl(38"] {
-  fill: var(--stb); 	/* Icon brb */
+.lookFilled-yCfaCM.colorGreen-3y-Z79{
+	background-color: var(--sec); /*Nitro feature nitro button*/
 }
-#app-mount .wrapper-1VLyxH rect[fill="#f04747"], #app-mount .wrapper-1VLyxH rect[fill="rgba(240, 71, 71, 1)"], #app-mount .wrapper-1VLyxH rect[fill="#ed4245"], #app-mount .wrapper-1VLyxH rect[mask*=dnd], #app-mount .wrapper-1VLyxH rect[fill*="hsl(359"] {
-  fill: var(--std); 	/* Icon dnd */
+.lookFilled-yCfaCM.colorGreen-3y-Z79:hover{
+	background-color: var(--main); /*Nitro feature nitro button hover*/
 }
-.avatarSpeaking-33RRJU, .avatarSpeaking-2pCGrZ, .border-2Vy6FN.speaking-7QZEkv{
-	box-shadow: inset 0 0 0 2px var(--sts),inset 0 0 0 3px var(--bg);
-} /* Speaking now */
-.strikethrough-2Kl6HF{color:var(--sec);}
+
+.itemFilled-1cPbtg[aria-checked=true] { /* Single check option */
+    background-color: var(--sec);
+}
+.itemFilled-1cPbtg[aria-checked=false] {/* same as above but not checked */
+    background-color: var(--nact);
+}
+.accountList-305sx3{
+    background-color: var(--box); /* Account box */
+}
+.accountBtnInner-3XK70s{
+	background-color: var(--boxsec); /* Account box icons bg */
+}
+.container-2nx-BQ{
+}
+div[style="opacity: 1; background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] {
+	background-color: var(--main) !important; /* trigger */
+}
+path[fill="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"]{
+	color: var(--main) !important; /* trigger */
+	fill: var(--sec) !important; /* trigger */
+}
+.defaultValue-19SZ-q .markValue-2U_-UG {
+    color: var(--main);
+}
 /*╦═════════════════════════╡ Other (Not categorized)╞═════════════════════════ 
 ──╜*/
 
@@ -216,7 +264,7 @@ div[class*="typeWindows-"]::after {
 .form-3gdLxP::before{display:none;}
 .children-3xh0VB::after{display:none;}
 /**{background-image:url(https://cdn.discordapp.com/emojis/891412061307932722.gif?quality=lossless);}*/
-
+/**{background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));}*/
 /*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌Comments samples▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀*/
 
 
