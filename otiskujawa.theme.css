@@ -17,7 +17,7 @@
 	--gr1a: var(--main); 	/* Colors of Message box gradient 1 */
 	--gr1b: var(--sec);
 	
-	--guildsbar:var(--bg); 	/* Test color */
+	--guildsbar: var(--bg); 	/* Test color */
 	--sidebar:	var(--bg);
 	
 	
