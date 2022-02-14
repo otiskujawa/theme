@@ -3,7 +3,7 @@
   *	@author otiskujawa#5583 and rombit#1866
   * @authorurl https://www.youtube.com/watch?v=dQw4w9WgXcQ
   *	@version 0.0.3
-  *	@description otiskujawa tries to make a good theme
+  *	@description otiskujawa and rombit are trying their best to make a good discord theme
   * @source https://github.com/otiskujawa/theme
   * @invite TBbteuW
 */
@@ -43,21 +43,21 @@
 
 
 /*┐
-  ╞═════════════════════════╡	Sidebar	╞═════════════════════════ 
+  ╞═════════════════════════╡  Sidebar	╞═════════════════════════ 
   │
-──┴─────────────────────────┤ Backgrounds	├─────────────────────────	*/
+──┴─────────────────────────┤  Backgrounds	├─────────────────────────	*/
 
 .guilds-2JjMmN .scroller-3X7KbA{background-color: var(--guildsbar);}  /* Guilds background */
 .sidebar-1tnWFu, .container-1NXEtd, .panels-3wFtMD, .chat-2ZfjoI {background-color: var(--sidebar);} /*Sidebar background*/
 .privateChannels-oVe7HL{background-color: var(--sidebar);}/* Private/friends chat background*/
 .container-ZMc96U, .header-3OsQeK{background-color: var(--bg) !important;} /*Top bar background*/
 
-/*┬─────────────────────────┤RTC connection	├─────────────────────────
+/*┬─────────────────────────┤   RTC connection	├─────────────────────────
 ──┘*/
 .rtcConnectionStatusConnected-1c73OK{color: var(--main);}
 .rtcConnectionQualityFine-3zZrSa .pingForeground-1BRBTc{color: var(--main);}
 
-/*┬─────────────────────────┤	Buttons		├─────────────────────────
+/*┬─────────────────────────┤	 Buttons	├─────────────────────────
 ──┘*/
 .button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx, .button-1EGGcP .buttonColor-3bP3fX.buttonActive-Uc1jHx {
     background-color: var(--main);
@@ -76,7 +76,7 @@
 	color: var(--main);
 }
 
-/*┬─────────────────────────┤	'Add' and 'explore' servers buttons	├─────────────────────────
+/*┬─────────────────────────┤	'Add' and 'explore' servers buttons 	├─────────────────────────
 ──┘*/
 .circleIconButton-1VxDrg{color: var(--main);}
 .circleIconButton-1VxDrg.selected-2r1Hvo{background-color: var(--main); color:var(--sec);}
@@ -86,9 +86,9 @@
 
 
 /*┐
-  ╞═════════════════════════╡ Mixed Cat		╞═════════════════════════ 
+  ╞═════════════════════════╡  Mixed Cat		╞═════════════════════════ 
   │
-──┴─────────────────────────┤ Subcat	├─────────────────────────	*/
+──┴─────────────────────────┤  Subcat	├─────────────────────────	*/
 #app-mount .wrapper-1VLyxH rect[fill="#43b581"], #app-mount .wrapper-1VLyxH rect[fill="#3ba55c"], #app-mount .wrapper-1VLyxH rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=online], #app-mount .wrapper-1VLyxH rect[fill*="hsl(139"] {
   fill: var(--sa); 	/* Icon active */
 }
