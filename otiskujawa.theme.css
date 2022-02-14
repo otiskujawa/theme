@@ -12,12 +12,12 @@
 	/* Main colors */
 	--main:	#007bff;
 	--sec:	#6f00ff;
-	--bg:	rgba(0,0,0,0);
+	--bg:	rgba(100,10,1,1);
 	/* Defining colors */
 	--gr1a: var(--main); 	/* Colors of Message box gradient 1 */
-	--gr1b: var(--sec);
+	--gr1b:	var(--sec);
 	
-	--guildsbar: var(--bg); 	/* Test color */
+	--gbar:		var(--bg); 	/* guilds bar */
 	--sidebar:	var(--bg);
 	
 	
@@ -25,6 +25,9 @@
 	--sb:	var(--main);					/* Icon brb */
 	--sd:	var(--sec);						/* Icon dnd */
 	--ss:	var(--main);					/* Speaking */
+	
+	--box:		#836;
+	--boxsec:	#283;
 }
 
 
@@ -76,6 +79,53 @@
 	color: var(--main);
 }
 
+/*┬─────────────────────────┤	Settings menu	├─────────────────────────
+──┘*/
+
+.lookFilled-yCfaCM.colorBrand-I6CyqQ {
+	background-color: var(--sec); /*settings buttons i think*/
+}
+
+.contentRegionScroller-2_GT_N {
+	background-color: var(--bg); /*this and below is the settings background*/
+}
+
+.sidebarRegionScroller-FXiQOh {
+	background-color: var(--sidebar); /*this and above is the settings background*/
+}
+
+.callContainer-HtHELf {
+	background-color: var(--box); /*call container (dont ask me what that is ~Rombit)*/
+}
+
+.accountProfileCard-lbN7n- {
+	background-color: var(--box); /*profile card in settings*/
+}
+
+.background-3d_SjE {
+	background-color: var(--boxsec); /*the other part of the profile card in settings*/
+}
+
+.fieldList-in8WkP{
+	background-color: var(--bg); /*the part of the profile card in the settings with your personal info im about to steal i mean what*/
+}
+
+.guilds-2JjMmN {
+	background-color: var(--gbar); /*the guilds bar*/
+}
+
+.profileBannerPreview-3mLIdO { 
+	background-color: var(--box); /*the profile previev in the settings*/
+}
+
+.connectionHeader-2rV1ze {
+	background-color: var(--box); /*the account list in the connected accounts settings menu*/
+}
+
+.connection-107AGH{
+	background-color: var(--boxsec); /*same as above*/
+}
+
 /*┬─────────────────────────┤	'Add' and 'explore' servers buttons 	├─────────────────────────
 ──┘*/
 .circleIconButton-1VxDrg{color: var(--main);}
@@ -102,6 +152,28 @@
 
 /*╦═════════════════════════╡ Other (Not categorized)╞═════════════════════════ 
 ──╜*/
+
+
+div[class*='wordmarkWindows-']>svg{ /*disables the discord logo on the bar with the close button and shit*/
+	display: none;
+}
+
+div[class*="typeWindows-"]::after { /*the bar with the close button stuff*/
+	content: 'a';
+	font-weight: 1000;
+	line-height: 16px;
+	background-color: var(--bg);
+	font-size: 0px;
+	position: absolute;
+	padding: 4px 12px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	background-image: url(https://cdn.discordapp.com/attachments/905490238368010241/927667173940416522/Untitled.png);
+	background-size: 100% 100%;
+} 
+
 
 
 /*╦═════════════════════════╡ WTF ╞═════════════════════════ 
