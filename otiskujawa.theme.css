@@ -2,7 +2,7 @@
   *	@name otiskujawa
   *	@author otiskujawa#5583 and rombit#1866
   * @authorurl https://www.youtube.com/watch?v=dQw4w9WgXcQ
-  *	@version 0.0.3.something
+  *	@version 0.0.5
   *	@description otiskujawa and rombit are trying their best to make a good discord theme
   * @source https://github.com/otiskujawa/theme
   * @invite TBbteuW
@@ -68,6 +68,11 @@
 .sidebar-1tnWFu, .container-1NXEtd, .panels-3wFtMD, .chat-2ZfjoI {background-color: var(--sidebar);} /*Sidebar background*/
 .privateChannels-oVe7HL{background-color: var(--sidebar);}/* Private/friends chat background*/
 .container-ZMc96U, .header-3OsQeK{background-color: var(--bg) !important;} /*Top bar background*/
+
+/* Panels */
+.panels-3wFtMD{background-color: var(--pbg);}/* Panels background */
+.activityPanel-9icbyU{background-color: var(--pliv);}/* Live background */
+.wrapper-3Hk9OB{background-color: var(--prtc);}/* Voice connected or smth */
 
 /*┬─────────────────────────┤   RTC connection	├─────────────────────────
 ──┘*/
@@ -140,6 +145,20 @@
 	background-color: var(--boxsec); /*same as above*/
 }
 
+/*┬─────────────────────────┤	Spotify 	├─────────────────────────
+──┘*/
+.container-6sXIoE .button-12Fmur{color: var(--nact);}
+.container-6sXIoE .button-12Fmur.active-6TsW-_ {color: var(--spmn);}
+.theme-dark .bar-1Bhnl9{background-color: var(--sec);}
+.barFill-2Bh7CX{background-color: var(--spmn) !important;}
+.container-6sXIoE{background-color: var(--psp);}/* Spotify controls background */
+.colorStandard-21JIj7{color: var(--nact);}
+.bar-g2ZMIm{background-color: var(--nact);}
+.grabber-7sd5f5{color: var(--spmn);}
+
+.button-12Fmur:hover.button-f2h6uQ:hover{background-color: var(--btbg);}
+.button-12Fmur:hover .contents-3ca1mk{color: var(--sec);}
+
 /*┬─────────────────────────┤	'Add' and 'explore' servers buttons 	├─────────────────────────
 ──┘*/
 .circleIconButton-1VxDrg{color: var(--main);}
@@ -154,25 +173,27 @@
   │
 ──┴─────────────────────────┤  Subcat	├─────────────────────────	*/
 #app-mount .wrapper-1VLyxH rect[fill="#43b581"], #app-mount .wrapper-1VLyxH rect[fill="#3ba55c"], #app-mount .wrapper-1VLyxH rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=online], #app-mount .wrapper-1VLyxH rect[fill*="hsl(139"] {
-  fill: var(--sa); 	/* Icon active */
+  fill: var(--sta); 	/* Icon active */
 }
 #app-mount .wrapper-1VLyxH rect[fill="#faa61a"], #app-mount .wrapper-1VLyxH rect[fill="rgba(250, 166, 26, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=idle], #app-mount .wrapper-1VLyxH rect[fill*="hsl(38"] {
-  fill: var(--sb); 	/* Icon brb */
+  fill: var(--stb); 	/* Icon brb */
 }
 #app-mount .wrapper-1VLyxH rect[fill="#f04747"], #app-mount .wrapper-1VLyxH rect[fill="rgba(240, 71, 71, 1)"], #app-mount .wrapper-1VLyxH rect[fill="#ed4245"], #app-mount .wrapper-1VLyxH rect[mask*=dnd], #app-mount .wrapper-1VLyxH rect[fill*="hsl(359"] {
-  fill: var(--sd); 	/* Icon dnd */
+  fill: var(--std); 	/* Icon dnd */
 }
-.avatarSpeaking-33RRJU, .avatarSpeaking-2pCGrZ, .border-2Vy6FN.speaking-7QZEkv{box-shadow: inset 0 0 0 2px var(--ss),inset 0 0 0 3px var(--bg);} /* Speaking now */
-
+.avatarSpeaking-33RRJU, .avatarSpeaking-2pCGrZ, .border-2Vy6FN.speaking-7QZEkv{
+	box-shadow: inset 0 0 0 2px var(--sts),inset 0 0 0 3px var(--bg);
+} /* Speaking now */
+.strikethrough-2Kl6HF{color:var(--sec);}
 /*╦═════════════════════════╡ Other (Not categorized)╞═════════════════════════ 
 ──╜*/
 
-
-div[class*='wordmarkWindows-']>svg{ /*disables the discord logo on the bar with the close button and shit*/
+/*disables the discord logo on the bar with the close button and shit*/
+/*div[class*='wordmarkWindows-']>svg{ 
 	display: none;
-}
-
-div[class*="typeWindows-"]::after { /*the bar with the close button stuff*/
+}*/
+/*the bar with the close button stuff*//*
+div[class*="typeWindows-"]::after { 
 	content: 'a';
 	font-weight: 1000;
 	line-height: 16px;
@@ -186,7 +207,7 @@ div[class*="typeWindows-"]::after { /*the bar with the close button stuff*/
 	z-index: -1;
 	background-image: url(https://cdn.discordapp.com/attachments/905490238368010241/927667173940416522/Untitled.png);
 	background-size: 100% 100%;
-} 
+} */
 
 
 
@@ -194,6 +215,7 @@ div[class*="typeWindows-"]::after { /*the bar with the close button stuff*/
 ──╜*/
 .form-3gdLxP::before{display:none;}
 .children-3xh0VB::after{display:none;}
+/**{background-image:url(https://cdn.discordapp.com/emojis/891412061307932722.gif?quality=lossless);}*/
 
 /*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌Comments samples▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀*/
 
