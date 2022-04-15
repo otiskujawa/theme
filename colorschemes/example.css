@@ -1,7 +1,9 @@
 /* Example v0.0 */
+:root 	{
   /* Main colors */
-	--main:	#007bff;
-	--sec:	#6f00ff;
-	/* Defining colors */
-	--gr1a: var(--main); /* Colors of Message box gradient 1 */
-	--gr1b: var(--sec);
+		--main:	#444444;
+		--sec:	#999999;
+		/* Defining colors */
+		--gr1a: var(--main); /* Colors of Message box gradient 1 */
+		--gr1b: var(--sec);
+}
