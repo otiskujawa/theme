@@ -11,7 +11,7 @@
 :root {
 	/* Main colors */
 	--main:	#007bff;
-	--sec:	#6f00ff;
+	--sec:	#7b00ff;
 	--nact:	#9b8aff; /* Not active color */
 	--bg:	rgba(0,0,0,0);
 	--btbg:	#578cff60;
@@ -35,8 +35,10 @@
 	--spbg:	var(--bg);
 	--spmn:	var(--main);
 	/* Bar */
-	--box:		#433659;
-	--boxsec:	#474673;
+	--box:		#00000040;
+	--boxsec:	#47467340;
+    /* Gradient opacity*/
+    --gradopac: 0;
 	/* Test colors */
 	--a:	#ff0000;
 	--b:	#00ff00;
@@ -45,214 +47,448 @@
 }
 
 
-
-
 /*──┐*/
 /* 	╞═════════════════════════╡	Chat	╞═════════════════════════ */
 /*	│*/
 /*──┴─────────────────────────┤Gradient	├─────────────────────────	*/
-.scrollableContainer-15eg7h	{ /* Message box gradient 1 */
-	background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));
+
+.scrollableContainer-15eg7h {
+    /* Message box gradient 1 */
+    background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));
 }
-.attachButtonPlay-1ATmb5	{ /* Message box gradient 1 */
-	color: var(--main);
+
+.attachButtonPlay-1ATmb5 {
+    /* Message box gradient 1 */
+    color: var(--main);
 }
+
 .theme-dark .container-2cd8Mz {
     background-color: var(--bg);
 }
 
 
+/* vc */
+
+.gradientContainer-phMG8d{
+    opacity: var(--gradopac);
+}
+
+
+.callContainer-HtHELf {
+    background-color: var(--box);
+    /*call container (dont ask me what that is ~Rombit)*/
+}
+
 /*┐
   ╞═════════════════════════╡  Sidebar	╞═════════════════════════ 
   │
 ──┴─────────────────────────┤  Backgrounds	├─────────────────────────	*/
-.scroller-WSmht3 {background-color: var(--sidebar);}
-.guilds-2JjMmN .scroller-3X7KbA{background-color: var(--guildsbar);}  /* Guilds background */
-.sidebar-1tnWFu, .container-1NXEtd, .panels-3wFtMD, .chat-2ZfjoI {background-color: var(--sidebar);} /*Sidebar background*/
-.privateChannels-oVe7HL{background-color: var(--sidebar);}/* Private/friends chat background*/
-.container-ZMc96U, .header-3OsQeK{background-color: var(--bg) !important;} /*Top bar background*/
-.nowPlayingColumn-1eCBCN, .container-1oAagU{ background-color: var(--bg);}
+
+.scroller-WSmht3 {
+    background-color: var(--sidebar);
+}
+
+.guilds-2JjMmN .scroller-3X7KbA {
+    background-color: var(--guildsbar);
+}
+
+
+/* Guilds background */
+
+.sidebar-1tnWFu,
+.container-1NXEtd,
+.panels-3wFtMD,
+.chat-2ZfjoI {
+    background-color: var(--sidebar);
+}
+
+
+/*Sidebar background*/
+
+.privateChannels-oVe7HL {
+    background-color: var(--sidebar);
+}
+
+
+/* Private/friends chat background*/
+
+.container-ZMc96U,
+.header-3OsQeK {
+    background-color: var(--bg) !important;
+}
+
+
+/*Top bar background*/
+
+.nowPlayingColumn-1eCBCN,
+.container-1oAagU {
+    background-color: var(--bg);
+}
 
 .wrapper-2RrXDg {
     background-color: var(--box);
     border: 1px solid var(--sec);
 }
+
 .section-3G9aLW {
     background-color: var(--boxsec);
 }
 
+
 /* Panels */
-.panels-3wFtMD{background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));border-radius:var(--prad);}/* Panels background */
-.activityPanel-9icbyU{background-color: var(--pliv);}/* Live background */
-.wrapper-3Hk9OB{background-color: var(--prtc);}/* Voice connected or smth */
+
+.panels-3wFtMD {
+    background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));
+    border-radius: var(--prad);
+}
+
+
+/* Panels background */
+
+.activityPanel-9icbyU {
+    background-color: var(--pliv);
+}
+
+
+/* Live background */
+
+.wrapper-3Hk9OB {
+    background-color: var(--prtc);
+}
+
+
+/* Voice connected or smth */
+
 
 /*┬─────────────────────────┤   RTC connection	├─────────────────────────
 ──┘*/
-.rtcConnectionStatusConnected-1c73OK{color: var(--main);}
-.rtcConnectionQualityFine-3zZrSa .pingForeground-1BRBTc{color: var(--main);}
+
+.rtcConnectionStatusConnected-1c73OK {
+    color: var(--main);
+}
+
+.rtcConnectionQualityFine-3zZrSa .pingForeground-1BRBTc {
+    color: var(--main);
+}
+
 
 /*┬─────────────────────────┤	 Buttons	├─────────────────────────
 ──┘*/
-.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx, .button-1EGGcP .buttonColor-3bP3fX.buttonActive-Uc1jHx {
+
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx,
+.button-1EGGcP .buttonColor-3bP3fX.buttonActive-Uc1jHx {
     background-color: var(--main);
     color: var(--sec);
 }
+
 .button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx:hover {
     background-color: var(--sec);
     color: var(--main);
 }
-.button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX{
-	background-color: var(--bg);
+
+.button-1EGGcP.buttonColor-3bP3fX,
+.button-1EGGcP .buttonColor-3bP3fX {
+    background-color: var(--bg);
     color: var(--main);
 }
-.button-1EGGcP.buttonColor-3bP3fX:hover, .button-1EGGcP .buttonColor-3bP3fX{
-	background-color: var(--sec);
-	color: var(--main);
+
+.button-1EGGcP.buttonColor-3bP3fX:hover,
+.button-1EGGcP .buttonColor-3bP3fX {
+    background-color: var(--sec);
+    color: var(--main);
 }
-.unreadBar-elBRZx{background: linear-gradient(-90deg, var(--gr1a), var(--gr1b));}
+
+.unreadBar-elBRZx {
+    background: linear-gradient(-90deg, var(--gr1a), var(--gr1b));
+}
 
 
 /*┬─────────────────────────┤	Spotify 	├─────────────────────────
 ──┘*/
-.container-6sXIoE .button-12Fmur{color: var(--nact);}
-.container-6sXIoE .button-12Fmur.active-6TsW-_ {color: var(--spmn);}
-.theme-dark .bar-1Bhnl9{background-color: var(--sec);}
-.barFill-2Bh7CX{background-color: var(--spmn) !important;}
-.container-6sXIoE{background-color: var(--psp);}/* Spotify controls background */
-.colorStandard-21JIj7{color: var(--nact);}
-.bar-g2ZMIm{background-color: var(--nact);}
-.grabber-7sd5f5{color: var(--spmn);}
 
-.button-12Fmur:hover.button-f2h6uQ:hover{background-color: var(--btbg);}
-.button-12Fmur:hover .contents-3ca1mk{color: var(--sec);}
+.container-6sXIoE .button-12Fmur {
+    color: var(--nact);
+}
 
-.cover-SwJ-ck{border-radius:var(--prad);}
+.container-6sXIoE .button-12Fmur.active-6TsW-_ {
+    color: var(--spmn);
+}
+
+.theme-dark .bar-1Bhnl9 {
+    background-color: var(--sec);
+}
+
+.barFill-2Bh7CX {
+    background-color: var(--spmn) !important;
+}
+
+.container-6sXIoE {
+    background-color: var(--psp);
+}
+
+
+/* Spotify controls background */
+
+.colorStandard-21JIj7 {
+    color: var(--nact);
+}
+
+.bar-g2ZMIm {
+    background-color: var(--nact);
+}
+
+.grabber-7sd5f5 {
+    color: var(--spmn);
+}
+
+.button-12Fmur:hover.button-f2h6uQ:hover {
+    background-color: var(--btbg);
+}
+
+.button-12Fmur:hover .contents-3ca1mk {
+    color: var(--sec);
+}
+
+.cover-SwJ-ck {
+    border-radius: var(--prad);
+}
+
+
 /*┬─────────────────────────┤	'Add' and 'explore' servers buttons 	├─────────────────────────
 ──┘*/
-.circleIconButton-1VxDrg{color: var(--main);}
-.circleIconButton-1VxDrg.selected-2r1Hvo{background-color: var(--main); color:var(--sec);}
+
+.circleIconButton-1VxDrg {
+    color: var(--main);
+}
+
+.circleIconButton-1VxDrg.selected-2r1Hvo {
+    background-color: var(--main);
+    color: var(--sec);
+}
+
 
 /* Stream untitled icon */
-.icon-39rdLt{background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));}
+
+.icon-39rdLt {
+    background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));
+}
+
 
 /*┐
   ╞═════════════════════════╡  Members	╞═════════════════════════ 
   │
 ──┴─────────────────────────┤  Subcat	├─────────────────────────	*/
-.botTag-2mryIa{background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));}/* Nice BOT tag */
-.ownerIcon-255uKo{color: var(--main);}
-.ownerIcon-255uKo.icon-1dGlZy.admin-Kv1Hp_{color: var(--sec);}
-.ownerIcon-255uKo.icon-1dGlZy.management-3fF_o8{color: var(--nact);}
-.container-2o3qEW{background: linear-gradient(0deg, var(--gr1a), var(--gr1b));}
+
+.botTag-2mryIa {
+    background: linear-gradient(-45deg, var(--gr1a), var(--gr1b));
+}
+
+
+/* Nice BOT tag */
+
+.ownerIcon-255uKo {
+    color: var(--main);
+}
+
+.ownerIcon-255uKo.icon-1dGlZy.admin-Kv1Hp_ {
+    color: var(--sec);
+}
+
+.ownerIcon-255uKo.icon-1dGlZy.management-3fF_o8 {
+    color: var(--nact);
+}
+
+.container-2o3qEW {
+    background: linear-gradient(0deg, var(--gr1a), var(--gr1b));
+}
+
 .members-3WRCEx,
-.membersWrap-3NUR2t .content-2a4AW9{background: #00000000;}
+.membersWrap-3NUR2t .content-2a4AW9 {
+    background: #00000000;
+}
+
 
 /*┐
   ╞═════════════════════════╡  Mixed Cat		╞═════════════════════════ 
   │
 ──┴─────────────────────────┤  Subcat	├─────────────────────────	*/
-#app-mount .wrapper-1VLyxH rect[fill="#43b581"], #app-mount .wrapper-1VLyxH rect[fill="#3ba55c"], #app-mount .wrapper-1VLyxH rect[fill="rgba(67, 181, 129, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=online], #app-mount .wrapper-1VLyxH rect[fill*="hsl(139"] {
-  fill: var(--sta); 	/* Icon active */
+
+#app-mount .wrapper-1VLyxH rect[fill="#43b581"],
+#app-mount .wrapper-1VLyxH rect[fill="#3ba55c"],
+#app-mount .wrapper-1VLyxH rect[fill="rgba(67, 181, 129, 1)"],
+#app-mount .wrapper-1VLyxH rect[mask*=online],
+#app-mount .wrapper-1VLyxH rect[fill*="hsl(139"] {
+    fill: var(--sta);
+    /* Icon active */
 }
-#app-mount .wrapper-1VLyxH rect[fill="#faa61a"], #app-mount .wrapper-1VLyxH rect[fill="rgba(250, 166, 26, 1)"], #app-mount .wrapper-1VLyxH rect[mask*=idle], #app-mount .wrapper-1VLyxH rect[fill*="hsl(38"] {
-  fill: var(--stb); 	/* Icon brb */
+
+#app-mount .wrapper-1VLyxH rect[fill="#faa61a"],
+#app-mount .wrapper-1VLyxH rect[fill="rgba(250, 166, 26, 1)"],
+#app-mount .wrapper-1VLyxH rect[mask*=idle],
+#app-mount .wrapper-1VLyxH rect[fill*="hsl(38"] {
+    fill: var(--stb);
+    /* Icon brb */
 }
-#app-mount .wrapper-1VLyxH rect[fill="#f04747"], #app-mount .wrapper-1VLyxH rect[fill="rgba(240, 71, 71, 1)"], #app-mount .wrapper-1VLyxH rect[fill="#ed4245"], #app-mount .wrapper-1VLyxH rect[mask*=dnd], #app-mount .wrapper-1VLyxH rect[fill*="hsl(359"] {
-  fill: var(--std); 	/* Icon dnd */
+
+#app-mount .wrapper-1VLyxH rect[fill="#f04747"],
+#app-mount .wrapper-1VLyxH rect[fill="rgba(240, 71, 71, 1)"],
+#app-mount .wrapper-1VLyxH rect[fill="#ed4245"],
+#app-mount .wrapper-1VLyxH rect[mask*=dnd],
+#app-mount .wrapper-1VLyxH rect[fill*="hsl(359"] {
+    fill: var(--std);
+    /* Icon dnd */
 }
-.avatarSpeaking-33RRJU, .avatarSpeaking-2pCGrZ, .border-2Vy6FN.speaking-7QZEkv{
-	box-shadow: inset 0 0 0 2px var(--sts),inset 0 0 0 3px var(--bg);
-} /* Speaking now */
-.strikethrough-2Kl6HF{color:var(--sec);}
+
+.avatarSpeaking-33RRJU,
+.avatarSpeaking-2pCGrZ,
+.border-2Vy6FN.speaking-7QZEkv {
+    box-shadow: inset 0 0 0 2px var(--sts), inset 0 0 0 3px var(--bg);
+}
+
+
+/* Speaking now */
+
+.strikethrough-2Kl6HF {
+    color: var(--sec);
+}
 
 
 /*╦═════════════════════════╡ 	Settings menu 	╞═════════════════════════ 
 ──╜*/
+
 .lookFilled-yCfaCM.colorBrand-I6CyqQ {
-	background-color: var(--sec); /*settings buttons i think*/
+    background-color: var(--sec);
+    /*settings buttons i think*/
 }
 
 .contentRegionScroller-2_GT_N {
-	background-color: var(--bg); /*this and below is the settings background*/
+    background-color: var(--bg);
+    /*this and below is the settings background*/
 }
 
 .sidebarRegionScroller-FXiQOh {
-	background-color: var(--sidebar); /*this and above is the settings background*/
+    background-color: var(--sidebar);
+    /*this and above is the settings background*/
 }
 
-.callContainer-HtHELf {
-	background-color: var(--box); /*call container (dont ask me what that is ~Rombit)*/
-}
 
 .accountProfileCard-lbN7n- {
-	background-color: var(--box); /*profile card in settings*/
+    background-color: var(--box);
+    /*profile card in settings*/
 }
 
 .background-3d_SjE {
-	background-color: var(--boxsec); /*the other part of the profile card in settings*/
+    background-color: var(--boxsec);
+    /*the other part of the profile card in settings*/
 }
 
-.fieldList-in8WkP{
-	background-color: var(--bg); /*the part of the profile card in the settings with your personal info im about to steal i mean what*/
+.fieldList-in8WkP {
+    background-color: var(--bg);
+    /*the part of the profile card in the settings with your personal info im about to steal i mean what*/
 }
 
 .guilds-2JjMmN {
-	background-color: var(--gbar); /*the guilds bar*/
+    background-color: var(--gbar);
+    /*the guilds bar*/
 }
 
-.profileBannerPreview-3mLIdO { 
-	background-color: var(--box); /*the profile previev in the settings*/
+.profileBannerPreview-3mLIdO {
+    background-color: var(--box);
+    /*the profile previev in the settings*/
 }
 
 .connectionHeader-2rV1ze {
-	background-color: var(--box); /*the account list in the connected accounts settings menu*/
+    background-color: var(--box);
+    /*the account list in the connected accounts settings menu*/
 }
 
-.connection-107AGH{
-	background-color: var(--boxsec); /*same as above*/
-}
-.theme-dark .feature-2IUcBI{
-	background-color: var(--box); /*Nitro feature*/
-}
-.lookFilled-yCfaCM.colorGreen-3y-Z79{
-	background-color: var(--sec); /*Nitro feature nitro button*/
-}
-.lookFilled-yCfaCM.colorGreen-3y-Z79:hover{
-	background-color: var(--main); /*Nitro feature nitro button hover*/
+.connection-107AGH {
+    background-color: var(--boxsec);
+    /*same as above*/
 }
 
-.itemFilled-1cPbtg[aria-checked=true] { /* Single check option */
+.theme-dark .feature-2IUcBI {
+    background-color: var(--box);
+    /*Nitro feature*/
+}
+
+.lookFilled-yCfaCM.colorGreen-3y-Z79 {
+    background-color: var(--sec);
+    /*Nitro feature nitro button*/
+}
+
+.lookFilled-yCfaCM.colorGreen-3y-Z79:hover {
+    background-color: var(--main);
+    /*Nitro feature nitro button hover*/
+}
+
+.itemFilled-1cPbtg[aria-checked=true] {
+    /* Single check option */
     background-color: var(--sec);
 }
-.itemFilled-1cPbtg[aria-checked=false] {/* same as above but not checked */
+
+.itemFilled-1cPbtg[aria-checked=false] {
+    /* same as above but not checked */
     background-color: var(--nact);
 }
-.accountList-305sx3{
-    background-color: var(--box); /* Account box */
+
+.accountList-305sx3 {
+    background-color: var(--box);
+    /* Account box */
 }
-.accountBtnInner-3XK70s{
-	background-color: var(--boxsec); /* Account box icons bg */
+
+.accountBtnInner-3XK70s {
+    background-color: var(--boxsec);
+    /* Account box icons bg */
 }
-.container-2nx-BQ{
-}
+
+.container-2nx-BQ {}
+
 div[style="opacity: 1; background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] {
-	background-color: var(--main) !important; /* trigger */
+    background-color: var(--main) !important;
+    /* trigger */
 }
-path[fill="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"]{
-	color: var(--main) !important; /* trigger */
-	fill: var(--sec) !important; /* trigger */
+
+path[fill="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
+    color: var(--main) !important;
+    /* trigger */
+    fill: var(--sec) !important;
+    /* trigger */
 }
+
 .defaultValue-19SZ-q .markValue-2U_-UG {
     color: var(--main);
 }
+
+
 /*╦═════════════════════════╡ Other (Not categorized)╞═════════════════════════ 
 ──╜*/
 
+.colorInfo-1kEg3T {
+    background-color: var(--main);
+}
+
+.theme-dark .activeButton-LRWFC_,
+.theme-dark .activeButton-LRWFC_:hover,
+.theme-light .activeButton-LRWFC_,
+.theme-light .activeButton-LRWFC_:hover {
+    color: #fff;
+    background-color: var(--main);
+}
+
+
 /*disables the discord logo on the bar with the close button and shit*/
+
+
 /*div[class*='wordmarkWindows-']>svg{ 
 	display: none;
 }*/
-/*the bar with the close button stuff*//*
+
+
+/*the bar with the close button stuff*/
+
+
+/*
 div[class*="typeWindows-"]::after { 
 	content: 'a';
 	font-weight: 1000;
@@ -270,22 +506,31 @@ div[class*="typeWindows-"]::after {
 } */
 
 
-
 /*╦═════════════════════════╡ WTF ╞═════════════════════════ 
 ──╜*/
-.form-3gdLxP::before{display:none;}
-.children-3xh0VB::after{display:none;}
+
+.form-3gdLxP::before {
+    display: none;
+}
+
+.children-3xh0VB::after {
+    display: none;
+}
+
+
 /**{background-image:url(https://cdn.discordapp.com/emojis/891412061307932722.gif?quality=lossless);}*/
+
+
 /**{background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));}*/
+
+
+/**{border-radius:20px !important;}*/
 
 
 /**{background: linear-gradient(-1deg, var(--gr1a), var(--gr1b)); animation: spin 10s infinite linear;}*/
 
 
-
-
 /*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌Comments samples▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀*/
-
 
 
 /*──┐
@@ -302,17 +547,14 @@ div[class*="typeWindows-"]::after {
 ────┘*/
 
 
-
 /*╦═════════════════════════╡ Cat		╞═════════════════════════ 
 ──╜*/
-
 
 
 /*┐
   ╞═════════════════════════╡ Cat		╞═════════════════════════ 
   │
 ──┴─────────────────────────┤ Subcat	├─────────────────────────	*/
-
 
 
 /*┬─────────────────────────┤ SubCat	├─────────────────────────
