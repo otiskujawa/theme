@@ -1,9 +1,40 @@
-/* Example v0.5 */
+/* Example v0.7 */
+
 :root 	{
-  /* Main colors */
-		--main:	#999999 !important;
-		--sec:	#222222 !important;
-		/* Defining colors */
-		--gr1a: var(--main) !important; /* Colors of Message box gradient 1 */
-		--gr1b: var(--sec) !important;
+	/* Main colors */
+	--main:	#00520b !important;
+	--sec:	#009e22 !important;
+	--nact:	#68faff !important; /* Not active color */
+	--bg:	rgba(0,0,0,0) !important;
+	--btbg:	#73ff5760 !important;
+	/* Defining colors */
+	--gr1a: var(--main) !important; 	/* Colors of Message box gradient 1 */
+	--gr1b: var(--sec) !important;
+	/* Backgrounds */
+	--guildsbar:var(--bg) !important; 	
+	--sidebar:	var(--bg) !important;
+	/* Status */
+	--sta:	var(--main) !important;	/* Status */	/* Icon active */
+	--stb:	var(--main) !important;					/* Icon brb */
+	--std:	var(--sec) !important;						/* Icon dnd */
+	--sts:	var(--main) !important;					/* Speaking */
+	/* Panels */
+	--pbg:	var(--bg) !important;/* Panels background */
+	--pliv:	var(--bg) !important;/* Live background */
+	--prtc:	var(--bg) !important;/* Voice connected or smth */
+	--prad:	10px !important; /* Border radius */ /* 100% to ball */
+	--rtc:  rgb(0, 255, 42); /* Voice Connected text color*/
+	/* Spotify */
+	--spbg:	var(--bg) !important;
+	--spmn:	var(--main) !important;
+	/* Bar */
+	--box:		#00000040 !important;
+	--boxsec:	#00ff0040 !important;
+	/* Gradient opacity*/
+	--gradopac: 0 !important;
+	/* Test colors */
+	--a:	#ff0000 !important;
+	--b:	#00ff00 !important;
+	--c:	#0000ff !important;
+	--d:	#ffff00 !important;
 }
