@@ -2,11 +2,15 @@
   *	@name otiskujawa
   *	@author otiskujawa#5583 and rombit#1866
   * @authorurl https://www.youtube.com/watch?v=dQw4w9WgXcQ
-  *	@version 0.0.5
+  *	@version 0.0.7
   *	@description otiskujawa and rombit are trying their best to make a good discord theme
   * @source https://github.com/otiskujawa/theme
   * @invite TBbteuW
 */
+/*                                                                     |    here    |*//*
+@import url('https://gitcdn.link/cdn/otiskujawa/theme/main/colorschemes/example2.css');
+*/
+
 
 :root {
 	/* Main colors */
@@ -37,8 +41,8 @@
 	/* Bar */
 	--box:		#00000040;
 	--boxsec:	#47467340;
-    /* Gradient opacity*/
-    --gradopac: 0;
+	/* Gradient opacity*/
+	--gradopac: 0;
 	/* Test colors */
 	--a:	#ff0000;
 	--b:	#00ff00;
