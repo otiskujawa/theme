@@ -1,11 +1,11 @@
 /**
   *	@name otiskujawa
   *	@author otiskujawa#5583 and rombit#1866
-  *     @authorurl https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  * @authorurl https://www.youtube.com/watch?v=dQw4w9WgXcQ
   *	@version 0.0.5
   *	@description otiskujawa and rombit are trying their best to make a good discord theme
-  *     @source https://github.com/otiskujawa/theme
-  *     @invite TBbteuW
+  * @source https://github.com/otiskujawa/theme
+  * @invite TBbteuW
 */
 
 :root {
@@ -371,6 +371,10 @@
     /*this and above is the settings background*/
 }
 
+.callContainer-HtHELf {
+    background-color: var(--box);
+    /*call container (dont ask me what that is ~Rombit)*/
+}
 
 .accountProfileCard-lbN7n- {
     background-color: var(--box);
@@ -442,8 +446,6 @@
     /* Account box icons bg */
 }
 
-.container-2nx-BQ {}
-
 div[style="opacity: 1; background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"] {
     background-color: var(--main) !important;
     /* trigger */
@@ -463,18 +465,6 @@ path[fill="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
 
 /*╦═════════════════════════╡ Other (Not categorized)╞═════════════════════════ 
 ──╜*/
-
-.colorInfo-1kEg3T {
-    background-color: var(--main);
-}
-
-.theme-dark .activeButton-LRWFC_,
-.theme-dark .activeButton-LRWFC_:hover,
-.theme-light .activeButton-LRWFC_,
-.theme-light .activeButton-LRWFC_:hover {
-    color: #fff;
-    background-color: var(--main);
-}
 
 
 /*disables the discord logo on the bar with the close button and shit*/
@@ -522,9 +512,6 @@ div[class*="typeWindows-"]::after {
 
 
 /**{background: linear-gradient(-180deg, var(--gr1a), var(--gr1b));}*/
-
-
-/**{border-radius:20px !important;}*/
 
 
 /**{background: linear-gradient(-1deg, var(--gr1a), var(--gr1b)); animation: spin 10s infinite linear;}*/
